@@ -1,0 +1,56 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model stories {
+   id    Int     @id @default(autoincrement())
+   name String 
+   desc String
+}
+
+model contact {
+  id  Int  @id @default(autoincrement())
+  name String  
+  email String 
+  phone String
+  message String  @db.Text
+  status Boolean @default(false) 
+  createdAt DateTime @default(now())
+}
+
+model login {
+  id  Int  @id @default(autoincrement()) 
+  email String 
+  password String
+}
+model otp {
+  id  Int  @id @default(autoincrement()) 
+  email String
+  otps String
+}
+
+
+
+
+model career {
+  id                    Int      @id @default(autoincrement())
+  additionalRequirements Json    
+  benefits              Json    
+  requirements          Json    
+  responsibilities      Json    
+  deadline              String
+  location              String
+  jobNature             String 
+  position              String
+  roleOverview          String
+  salaryRange           String
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+}
