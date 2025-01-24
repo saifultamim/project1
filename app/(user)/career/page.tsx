@@ -176,7 +176,7 @@ const Page = () => {
                                     target="_blank"
                                     className="text-blue-600 hover:text-blue-800 flex items-center justify-start md:justify-center"
                                 >
-                                    <IoIosArrowForward className="ml-1 text-xl" />
+                                    <IoIosArrowForward className="ml-1 text-xl " />
                                 </Link>
                             </div>
                         ))}

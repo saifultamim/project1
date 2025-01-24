@@ -120,7 +120,7 @@ const contactUs = [
             onChange={handleChange}
             type="email"
             value={formData.email}
-            className='w-full px-4 py-2 rounded-mdfocus:outline-none focus:border-blue-600 bg-violet-100'
+            className='w-full px-4 py-2 rounded-md focus:outline-none focus:border-blue-600 bg-violet-100'
             required
             />
         </div>
