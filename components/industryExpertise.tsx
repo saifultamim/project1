@@ -21,7 +21,7 @@ const industry = [
 const IndustryExpertise = () => {
     return (
        <div className='bg-zinc-200'>
-          <div className="w-10/12 mx-auto px-6 md:px-20 lg:px-28 py-16 ">
+          <div className=" w-full md:w-10/12 lg:w-10/12 mx-auto px-6 md:px-20 lg:px-28 py-16 ">
         <div className="">
           <h2 className="text-4xl font-bold text-gray-800 jaro">Industry Expertise</h2>
           <p className="text-lg text-gray-600 mt-4">
@@ -45,7 +45,7 @@ const IndustryExpertise = () => {
                 />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-lg font-semibold text-gray-800">{data.title}</h3>
+                <h3 className=" text-sm md:text-md lg;text-lg font-semibold text-gray-800">{data.title}</h3>
               </div>
             </div>
           ))}

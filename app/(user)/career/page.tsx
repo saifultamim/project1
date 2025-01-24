@@ -149,7 +149,7 @@ const Page = () => {
   
         </div>
 
-        <div className='w-4/5 mx-auto'>
+        <div className='w-full md:w-4/5 lg:w-4/5 mx-auto'>
         <p className='text-black text-3xl font-bold jaro mb-5'>Current Openings...</p>
         <div className="bg-gray-100 py-8 px-4 rounded">
             <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Available Vacancies</h1>

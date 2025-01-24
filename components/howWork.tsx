@@ -21,8 +21,8 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const HowWork = () => {
     return (
-        <div className='bg-zinc-200'>
-          <div className="w-10/12 mx-auto  py-20">
+        <div className='bg-zinc-200 '>
+          <div className="w-10/12 mx-auto  py-20 ">
         <div className="container mx-auto px-6 lg:px-12">
         
           <div className="text-center md:text-left mb-12">
@@ -48,7 +48,7 @@ const HowWork = () => {
        </div>
   
           
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:flex gap-2 text-lg jaro justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:flex gap-2 text-lg jaro justify-center mt-8'>
            {howWorkprocess?.map((params,idx)=><div key={idx} className='flex items-center gap-1 justify-center'>
            <p>{params.title}</p>
             <p className='hidden lg:block'>{params?.icon}</p>

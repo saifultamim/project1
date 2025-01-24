@@ -44,7 +44,7 @@ const WhyPartner = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4">
         {
-            whyPartner?.map((params,idx)=><div key={idx} className=' bg-white mx-auto w-10/12  py-4 transition-transform transform hover:scale-105'>
+            whyPartner?.map((params,idx)=><div key={idx} className=' bg-white mx-auto w-10/12  py-4 transition-transform transform hover:scale-105 rounded-lg'>
                 <p className='jaro text-xl'>{params.title}</p>
                 <div>
                     {params.items?.map((param,i)=><div key={i} className='flex items-center gap-2 ml-4'>

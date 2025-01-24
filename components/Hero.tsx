@@ -6,7 +6,7 @@ import hero from '@/public/images/hero.jpg'
 const Hero = () => {
     return (
       <div className='bg-zinc-200'>
-          <div className="w-10/12  mx-auto">
+          <div className="w-full md:w-10/12 lg:w-10/12  mx-auto">
         <div className="container mx-auto px-6 lg:px-12 py-10 lg:flex lg:justify-between lg:items-center">
           
           <div className="text-center lg:text-left mb-10 lg:mb-0">

@@ -48,7 +48,7 @@ const technology = [
 const TechnologyUse = () => {
     return (
        <div className='bg-zinc-200 '> 
-           <div className="w-10/12 mx-auto px-6 md:px-16 lg:px-24 py-16 ">
+           <div className="w-full md:w-10/12 lg:w-10/12 mx-auto px-6 md:px-16 lg:px-24 py-16  ">
         <div className="text-center md:text-left">
           <h2 className="text-4xl font-bold text-gray-800 jaro">
             Technologies We Use
@@ -71,7 +71,7 @@ const TechnologyUse = () => {
                 width={100}
                 className="w-20 h-20 object-contain"
               />
-              <p className=" text-md  font-bold ">
+              <p className=" text-sm md:text-md lg:text-md  font-bold ">
                 {param.technology}
               </p>
             </div>
