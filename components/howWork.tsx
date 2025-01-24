@@ -48,7 +48,7 @@ const HowWork = () => {
        </div>
   
           
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:flex gap-2 text-lg jaro justify-center mt-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:flex gap-2 text-lg jaro justify-center mt-10'>
            {howWorkprocess?.map((params,idx)=><div key={idx} className='flex items-center gap-1 justify-center'>
            <p>{params.title}</p>
             <p className='hidden lg:block'>{params?.icon}</p>
