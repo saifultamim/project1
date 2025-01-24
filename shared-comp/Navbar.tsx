@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
- const largeDevice = <div className="hidden md:block space-x-8 md:text-lg lg:text-xl jaro">
+ const largeDevice = <div className="hidden lg:block space-x-8 md:text-lg lg:text-xl jaro">
  <Link href="/" className='hover:text-red-600'>Home</Link>
    <Link href="/services" className='hover:text-red-600'>Services</Link>
    <Link href="/client-stories" className='hover:text-red-600'>Client Stories</Link>
@@ -14,7 +14,7 @@ export default function Navbar() {
    <Link href="/contact" className='hover:text-red-600'>Contact</Link>
  </div>
 
- const smallDevice = <div className="grid grid-cols-1 px-2 pt-2 pb-3 space-y-1 sm:px-3 jaro ">
+ const smallDevice = <div className="grid grid-cols-1 px-2 pt-2 pb-3 space-y-1 sm:px-3 jaro  ">
    <Link href="/" className='hover:text-red-600'>Home</Link>
    <Link href="/services" className='hover:text-red-600'>Services</Link>
    <Link href="/client-stories" className='hover:text-red-600'>Client Stories</Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
          {largeDevice}
 
           
-          <div className="flex md:hidden">
+          <div className="flex lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded-lg"
